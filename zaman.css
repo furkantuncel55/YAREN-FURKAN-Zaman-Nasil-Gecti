@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: url(resim/kolaşk2.jpg);
+    width: 95rem;
+    height: 80rem;
+}
+
+.container .navbar {
+    position: absolute;
+    width: 95rem;
+    height: 4rem;
+    background: rgba(255, 203, 219, 0.5);
+}
+
+.navbar #menüBtn {
+    display: none;
+}
+
+.navbar .menüBtn {
+    font-size: 5rem;
+    color: #f1faef;
+    float: left;
+    line-height: 128px;
+    margin-left: 2.17rem;
+    display: none;
+}
+
+.navbar .logo {
+    display: inline-block;
+    margin-left: 2.7rem;
+    margin-top: .7rem;
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(135, 41, 95);
+    user-select: none;
+
+}
+
+.navbar ul {
+    float: right;
+    margin-right: 2.5rem;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 .5rem;
+    line-height: 4rem;
+}
+
+.navbar ul li a {
+    color: rgb(195, 193, 255);
+    text-decoration: none;
+    font-size: 25px;
+    padding: 17px 14px;
+    font-weight: bold;
+    font-family: monospace;
+    transition: 0.2s;
+    border-radius: 36px;
+    text-decoration-line: none;
+}
+
+.navbar audio {
+    display: none;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    height: 2px;
+    width: 5px;
+    background: rgb(255, 122, 182);
+    border-radius: 2px;
+}
+
+
+
+
+.container .center {
+    position: absolute;
+    padding: 2rem;
+    border-radius: 25px;
+    top: 55rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    user-select: none;
+}
+.center video{
+    border-radius: 25px;
+    position: relative;
+    top: -490px;
+    width: 1100px;
+}
+
+@media (max-width:975px) {
+    .navbar .menüBtn {
+        display: initial;
+    }
+
+    .container {
+
+        width: 85rem;
+        height: 225rem;
+    }
+
+    .container .center {
+        position: relative;
+        padding: 25rem;
+        border-radius: 25px;
+        width: 14rem;
+        height: 82rem;
+        top: 71rem;
+        left: -33rem;
+        transform: translate(25%, -4%);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        user-select: none;
+    }
+
+
+    .navbar .logo {
+        display: inline-block;
+        margin-left: 1.7rem;
+        margin-top: 0.7rem;
+    }
+
+    .navbar .logo a {
+        text-decoration: none;
+        margin-left: 275px;
+        font-size: 72px;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(135, 41, 95);
+    }
+
+    .navbar ul {
+        position: absolute;
+        background: url(resim/IMG-20241125-WA0012.jpg);
+        background-size: 19.85rem;
+        width: 70%;
+        height: 160rem;
+        top: 9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all .5s;
+        left: -100%;
+    }
+
+    .navbar ul li {
+        display: block;
+        min-width: 75%;
+        text-align: center;
+        line-height: 2000%;
+    }
+
+    .navbar ul li a {
+        display: block;
+        font-size: 19rem;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 75px;
+        padding: 197px 82px;
+        font-family: cursive;
+        transition: 0.2s;
+        border-radius: 19px;
+        text-decoration-line: none;
+    }
+
+    .navbar ul li a.active,
+    .navbar ul li a:hover {
+        background: rgba(255, 125, 218, 0.474);
+        border-radius: 41px;
+        width: 750px;
+    }
+
+    .container .navbar {
+        position: absolute;
+        width: 85rem;
+        height: 9rem;
+    }
+
+    .navbar #menüBtn:checked~ul {
+        left: 0;
+    }
+
+
+
+    .navbar #menüBtn:checked~label.menüBtn i::before {
+        content: "\f00d";
+    }
+}
