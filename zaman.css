@@ -83,22 +83,7 @@
 
 
 
-.container .center {
-    position: absolute;
-    padding: 2rem;
-    border-radius: 25px;
-    top: 55rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    user-select: none;
-}
-.center video{
-    border-radius: 25px;
-    position: relative;
-    top: -490px;
-    width: 1100px;
-}
+
 
 @media (max-width:975px) {
     .navbar .menüBtn {
